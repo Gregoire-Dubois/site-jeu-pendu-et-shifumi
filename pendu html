@@ -1,0 +1,89 @@
+<! -- mini site contenant : - un pendu  -->
+
+  <!doctype html>
+  <html lang="fr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Jeu du pendu</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+
+    <div class="title">
+      <h1 class="mainTitle">Jeu du pendu</h1>
+    </div>
+
+    <div class="consigne">
+      <p>Tentez de découvrir le mot caché. Afin de trouver le mot mystère et sauver votre bonhomme vous disposez de 5
+        chances, utilisez les à bonne escient ;)</p>
+    </div>
+
+    <div class="motMystère">
+      <div class="myst">
+        <div class="star1">
+          *
+        </div>
+        <div class="star2">
+          *
+        </div>
+        <div class="star3">
+          *
+        </div>
+        <div class="star4">
+          *
+        </div>
+      </div>
+
+      <div class="myst2">
+
+      </div>
+      <div class="myst3">
+
+      </div>
+      <div class="myst4">
+
+      </div>
+
+    </div>
+
+    <div class="blackBoard">
+      <img class="board"
+        src="https://tdc-images.tolunastart-tdcprod.com/2016/11/26/5b2057c3-0ba4-4cb1-b412-e91c4f9421e8_x365.jpg">
+
+    </div>
+
+    <div class="keyBoard">
+      <button type="button" class="btna">A</button>
+      <button type="button" class="btnb">B</button>
+      <button type="button" class="btnc">C</button>
+      <button type="button" class="btnd">D</button>
+      <button type="button" class="btne">E</button>
+      <button type="button" class="btnf">F</button>
+      <button type="button" class="btng">G</button>
+      <button type="button" class="btnh">H</button>
+      <button type="button" class="btni">I</button>
+      <button type="button" class="btnj">J</button>
+      <button type="button" class="btnk">K</button>
+      <button type="button" class="btnl">L</button>
+      <button type="button" class="btnm">M</button>
+      <button type="button" class="btnn">N</button>
+      <button type="button" class="btno">O</button>
+      <button type="button" class="btnp">P</button>
+      <button type="button" class="btnq">Q</button>
+      <button type="button" class="btnr">R</button>
+      <button type="button" class="btns">S</button>
+      <button type="button" class="btnt">T</button>
+      <button type="button" class="btnu">U</button>
+      <button type="button" class="btnv">V</button>
+      <button type="button" class="btnw">W</button>
+      <button type="button" class="btnx">X</button>
+      <button type="button" class="btny">Y</button>
+      <button type="button" class="btnz">Z</button>
+    </div>
+
+  </body>
+
+  </html>
