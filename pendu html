@@ -1,4 +1,4 @@
-<! -- mini site contenant : - un pendu  -->
+<! -- mini site contenant : - un pendu - un shifumi -->
 
   <!doctype html>
   <html lang="fr">
@@ -56,32 +56,32 @@
     </div>
 
     <div class="keyBoard">
-      <button type="button" class="btna">A</button>
-      <button type="button" class="btnb">B</button>
-      <button type="button" class="btnc">C</button>
-      <button type="button" class="btnd">D</button>
-      <button type="button" class="btne">E</button>
-      <button type="button" class="btnf">F</button>
-      <button type="button" class="btng">G</button>
-      <button type="button" class="btnh">H</button>
-      <button type="button" class="btni">I</button>
-      <button type="button" class="btnj">J</button>
-      <button type="button" class="btnk">K</button>
-      <button type="button" class="btnl">L</button>
-      <button type="button" class="btnm">M</button>
-      <button type="button" class="btnn">N</button>
-      <button type="button" class="btno">O</button>
-      <button type="button" class="btnp">P</button>
-      <button type="button" class="btnq">Q</button>
-      <button type="button" class="btnr">R</button>
-      <button type="button" class="btns">S</button>
-      <button type="button" class="btnt">T</button>
-      <button type="button" class="btnu">U</button>
-      <button type="button" class="btnv">V</button>
-      <button type="button" class="btnw">W</button>
-      <button type="button" class="btnx">X</button>
-      <button type="button" class="btny">Y</button>
-      <button type="button" class="btnz">Z</button>
+      <button type="button" class="btna btn">A</button>
+      <button type="button" class="btnb btn">B</button>
+      <button type="button" class="btnc btn">C</button>
+      <button type="button" class="btnd btn">D</button>
+      <button type="button" class="btne btn">E</button>
+      <button type="button" class="btnf btn">F</button>
+      <button type="button" class="btng btn">G</button>
+      <button type="button" class="btnh btn">H</button>
+      <button type="button" class="btni btn">I</button>
+      <button type="button" class="btnj btn">J</button>
+      <button type="button" class="btnk btn">K</button>
+      <button type="button" class="btnl btn">L</button>
+      <button type="button" class="btnm btn">M</button>
+      <button type="button" class="btnn btn">N</button>
+      <button type="button" class="btno btn">O</button>
+      <button type="button" class="btnp btn">P</button>
+      <button type="button" class="btnq btn">Q</button>
+      <button type="button" class="btnr btn">R</button>
+      <button type="button" class="btns btn">S</button>
+      <button type="button" class="btnt btn">T</button>
+      <button type="button" class="btnu btn">U</button>
+      <button type="button" class="btnv btn">V</button>
+      <button type="button" class="btnw btn">W</button>
+      <button type="button" class="btnx btn">X</button>
+      <button type="button" class="btny btn">Y</button>
+      <button type="button" class="btnz btn">Z</button>
     </div>
 
   </body>
