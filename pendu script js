@@ -1,7 +1,8 @@
-const btn = document.querySelector('.btn');
+const btns = document.querySelectorAll('.btn');
 
-//console.log(letter);
+btns.forEach((btns) => {
+    btns.addEventListener('click', (e) => {
+       console.log(e.target.innerText); 
+    })
+});
 
-
-
-//letter.onclick = () => {console.log("tu cliques sur", letter.textContent)}
