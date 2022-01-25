@@ -1,5 +1,5 @@
 // génerer le mot aléatoire
-const wordsList = ['python', 'java', 'github', 'jabascript', 'kobol'];
+const wordsList = ['PYTHON', 'JAVA', 'GITHUB', 'JAVASCRIPT', 'KOBOL'];
 const randomNumber = Math.round(Math.random()*wordsList.length);
 const oneWord = wordsList[randomNumber];
 console.log(oneWord)
@@ -15,19 +15,23 @@ console.log(secretWord.join(''))
 // déclaration du sélecteur CSS pour le boutton .btn
 const btns = document.querySelectorAll('.btn');
 
-//fonction pour comparer la valeur du click
-function teste(btns){
-  if(e.target.innerText === 'A'){ console.log('ok')}
-}
 
 //fonction pour écouter les click sur le clavier visuel
+let unMask = [];
 btns.forEach((btns) => {
-    btns.addEventListener('click', (e) => {
-       console.log(e.target.innerText);
-       teste() 
-             
-    })
+  btns.addEventListener('click', (e) => {
+    // code pour une boucle for dans le mot aléatoire
+    for(let letter = 0; letter < oneWord.length; letter++){
+      if(e.target.innerText == oneWord[letter]){
+        secretWord.splice([letter], 1,e.target.innerText)
+      }
+    }
+    console.log("unmask vaut ", secretWord.join(''))
+  })
 });
 
+// compteur de chances
 
+// animation des images e ncas d'échecs
 
+// bloquage clavier virtuel en cas d'épuisement des changes
