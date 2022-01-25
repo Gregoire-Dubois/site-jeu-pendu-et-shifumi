@@ -1,8 +1,33 @@
+// génerer le mot aléatoire
+const wordsList = ['python', 'java', 'github', 'jabascript', 'kobol'];
+const randomNumber = Math.round(Math.random()*wordsList.length);
+const oneWord = wordsList[randomNumber];
+console.log(oneWord)
+
+// afficher le mot aléatoire sous les étoiles 
+const secretWord = [];
+const star = "*";
+for(let i = 0; i < oneWord.length; i++){
+  secretWord.push(star)
+}
+console.log(secretWord.join(''))
+
+// déclaration du sélecteur CSS pour le boutton .btn
 const btns = document.querySelectorAll('.btn');
 
+//fonction pour comparer la valeur du click
+function teste(btns){
+  if(e.target.innerText === 'A'){ console.log('ok')}
+}
+
+//fonction pour écouter les click sur le clavier visuel
 btns.forEach((btns) => {
     btns.addEventListener('click', (e) => {
-       console.log(e.target.innerText); 
+       console.log(e.target.innerText);
+       teste() 
+             
     })
 });
+
+
 
