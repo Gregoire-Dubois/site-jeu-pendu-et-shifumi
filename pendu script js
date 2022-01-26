@@ -1,8 +1,63 @@
-const btns = document.querySelectorAll('.btn');
+// génerer le mot aléatoire
+const wordsList = ["PYTHON", "JAVA", "GITHUB", "JAVASCRIPT", "KOBOL"];
+const randomNumber = Math.round(Math.random() * wordsList.length);
+const oneWord = wordsList[randomNumber];
+console.log(oneWord);
+
+// afficher le mot aléatoire sous les étoiles
+const secretWord = [];
+const star = "*";
+for (let i = 0; i < oneWord.length; i++) {
+  secretWord.push(star);
+}
+console.log(secretWord.join(""));
+document.querySelector(".stars").innerHTML = secretWord.join("");
+
+// déclaration du sélecteur CSS pour le boutton .btn
+const btns = document.querySelectorAll(".btn");
+
+//fonction pour écouter les click sur le clavier visuel
+let unMask = [];
+let chance = 11; // nombre max de chances
+let msg = "";
 
 btns.forEach((btns) => {
-    btns.addEventListener('click', (e) => {
-       console.log(e.target.innerText); 
-    })
+  let tryLetter = 0; //valeur de réponse, si vaut 1 ou plus alors c'est OK. si vaut 0 alors c'est faux
+
+  btns.addEventListener("click", (e) => {
+    // boucle de vérification des caractères saisis par l'utilisateur avec ceux du mot mystère
+    for (let letter = 0; letter < oneWord.length; letter++) {
+      if (e.target.innerText == oneWord[letter]) {
+        secretWord.splice([letter], 1, e.target.innerText);
+        tryLetter = 1;
+        console.log(tryLetter);
+      }
+    }
+    document.querySelector(".stars").innerHTML = secretWord.join("");
+    if (tryLetter !== 1) {
+      chance--;
+      msg = `Il vous reste ${chance} chance(s)`;
+      document.querySelector(".vies").innerHTML = msg;
+      console.log("il vous reste", chance);
+    }
+
+    if (chance === 0) {
+      return (document.querySelector(".gameOver").innerHTML = "Game Overs :(");
+      console.log("pas de Chance, vous avez utilisé toutes vos chances");
+    }
+  });
 });
 
+// arreter la boucle lorsque le mot est trouvé
+
+// mécanisme de rafraischissement de page si les chances sont épuisées et ou le mot trouvé
+
+// pour le compteur de chances, faire une condition pour que le S de chance diparaisse quant il reste 1 seule chance
+
+// animation carousel des images en cas d'échecs
+
+// bloquage clavier virtuel en cas d'épuisement des chances
+
+// injecter multiples mots dans base de données
+
+// style de couleur dark ou non en fonction de l'heure système
